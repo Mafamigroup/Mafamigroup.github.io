@@ -24,7 +24,7 @@
           <div v-for="(fl, ind) in fields" class="border bg-white mb-4">
             <input v-if="fl.occupied == 'NO'" type="hidden" :name="fl.name" value="0">
             <div class="border-bottom bg-opacity-25 py-2 px-3" :class="fl.occupied == 'YES' ? 'bg-primary' : (fl.occupied == 'NO' ? 'bg-danger' : 'bg-secondary')">
-              <h5 class="mb-1"># {{fl.label}}</h5>
+              <h5 class="m-0"># {{fl.label}}</h5>
             </div>
             <div class="px-3 py-3">
               <div class="row">
